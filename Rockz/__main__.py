@@ -49,9 +49,9 @@ async def init():
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await Yukki.start()
+    await Rock.start()
     try:
-        await Yukki.stream_call(
+        await Rock.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
@@ -61,11 +61,11 @@ async def init():
         sys.exit()
     except:
         pass
-    await Yukki.decorators()
-    LOGGER("Rockz").info("Yukki Music Bot Started Successfully")
+    await Rock.decorators()
+    LOGGER("Rockz").info("🥌 Rock Music Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("Rockz").info("Stopping Yukki Music Bot! GoodBye")
+    LOGGER("Rockz").info("Stopping 🥌 Rock Music Bot! GoodBye")
