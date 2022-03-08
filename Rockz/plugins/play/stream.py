@@ -8,7 +8,7 @@ import config
 from config import BANNED_USERS
 from strings import get_command
 from Rockz import app
-from Rockz.core.call import Yukki
+from Rockz.core.call import Rock
 from Rockz.utils.decorators.play import PlayWrapper
 from Rockz.utils.logger import play_logs
 from Rockz.utils.stream.stream import stream
@@ -36,7 +36,7 @@ async def stream_command(
             _["play_2"].format(channel) if channel else _["play_1"]
         )
         try:
-            await Yukki.stream_call(url)
+            await Rock.stream_call(url)
         except NoActiveGroupCall:
             await mystic.edit_text(
                 "There's an issue with the bot. Please report it to my owner and ask them to check logger group."
