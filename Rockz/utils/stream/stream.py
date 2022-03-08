@@ -8,7 +8,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from Rockz import Carbon, Spotify, YouTube, app
-from Rockz.core.call import Yukki
+from Rockz.core.call import Rock
 from Rockz.misc import db
 from Rockz.utils.database import (add_active_chat,
                                        add_active_video_chat,
@@ -18,7 +18,7 @@ from Rockz.utils.exceptions import AssistantErr
 from Rockz.utils.inline.play import (stream_markup,
                                           telegram_markup)
 from Rockz.utils.inline.playlist import close_markup
-from Rockz.utils.pastebin import Yukkibin
+from Rockz.utils.pastebin import Rockbin
 from Rockz.utils.stream.queue import put_queue, put_queue_index
 from Rockz.utils.thumbnails import gen_thumb
 
@@ -90,7 +90,7 @@ async def stream(
                     )
                 except:
                     raise AssistantErr(_["play_16"])
-                await Yukki.join_call(
+                await Rock.join_call(
                     chat_id, original_chat_id, file_path, video=status
                 )
                 await add_active_chat(chat_id)
@@ -122,7 +122,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await Yukkibin(msg)
+            link = await Rockbin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -171,7 +171,7 @@ async def stream(
             )
         else:
             db[chat_id] = []
-            await Yukki.join_call(
+            await Rock.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await add_active_chat(chat_id)
@@ -225,7 +225,7 @@ async def stream(
             )
         else:
             db[chat_id] = []
-            await Yukki.join_call(
+            await Rock.join_call(
                 chat_id, original_chat_id, file_path, video=None
             )
             await put_queue(
@@ -279,7 +279,7 @@ async def stream(
             )
         else:
             db[chat_id] = []
-            await Yukki.join_call(
+            await Rock.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await add_active_chat(chat_id)
@@ -338,7 +338,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await Yukki.join_call(
+            await Rock.join_call(
                 chat_id, original_chat_id, file_path, video=status
             )
             await add_active_chat(chat_id)
@@ -390,7 +390,7 @@ async def stream(
             )
         else:
             db[chat_id] = []
-            await Yukki.join_call(
+            await Rock.join_call(
                 chat_id, original_chat_id, link, video=True
             )
             await add_active_chat(chat_id)
