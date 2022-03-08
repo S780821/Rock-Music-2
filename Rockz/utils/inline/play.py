@@ -21,7 +21,7 @@ def track_markup(_, videoid, user_id):
                 text=_["P_B_2"],
                 callback_data=f"MusicStream {videoid}|{user_id}|v",
             ),
-        ],
+        ]
         [
                 InlineKeyboardButton("乂ʙᴏᴛ sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
                 InlineKeyboardButton(
@@ -48,7 +48,7 @@ def stream_markup(_, videoid):
             InlineKeyboardButton(
                 text=_["PL_B_3"], switch_inline_query_current_chat=""
             ),
-        ],
+        ]
         [
                 InlineKeyboardButton("乂ʙᴏᴛ sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
                 InlineKeyboardButton(
@@ -83,13 +83,13 @@ def playlist_markup(_, videoid, user_id, ptype):
         [
             InlineKeyboardButton(
                 text=_["P_B_1"],
-                callback_data=f"YukkiPlaylists {videoid}|{user_id}|{ptype}|a",
+                callback_data=f"RockPlaylists {videoid}|{user_id}|{ptype}|a",
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
-                callback_data=f"YukkiPlaylists {videoid}|{user_id}|{ptype}|v",
+                callback_data=f"RockPlaylists {videoid}|{user_id}|{ptype}|v",
             ),
-        ],
+        ]
         [
                 InlineKeyboardButton("乂ʙᴏᴛ sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
                 InlineKeyboardButton(
