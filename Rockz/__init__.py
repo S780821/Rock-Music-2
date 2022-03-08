@@ -7,7 +7,7 @@
 #
 # All rights reserved.
 
-from Rockz.core.bot import YukkiBot
+from Rockz.core.bot import RockBot
 from Rockz.core.dir import dirr
 from Rockz.core.git import git
 from Rockz.core.userbot import Userbot
@@ -31,7 +31,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = YukkiBot()
+app = RockBot()
 
 # Assistant Client
 userbot = Userbot()
