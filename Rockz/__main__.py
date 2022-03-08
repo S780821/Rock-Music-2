@@ -32,7 +32,7 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER("Rockz").error(
+        LOGGER("RockBot").error(
             "No Assistant Clients Vars Defined!.. Exiting Process."
         )
         return
@@ -49,9 +49,9 @@ async def init():
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await Rock.start()
+    await RockBot.start()
     try:
-        await Rock.stream_call(
+        await RockBot.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
@@ -61,7 +61,7 @@ async def init():
         sys.exit()
     except:
         pass
-    await Rock.decorators()
+    await Rockz.decorators()
     LOGGER("Rockz").info("🥌 Rock Music Bot Started Successfully")
     await idle()
 
