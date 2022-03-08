@@ -11,7 +11,7 @@ from ..logging import LOGGER
 
 class RockBot(Client):
     def __init__(self):
-        LOGGER(__name__).info(f"Starting Bot")
+        LOGGER(__name__).info(f"Sᴛᴀʀᴛɪɴɢ Bᴏᴛ")
         super().__init__(
             "Rock-Music-2",
             api_id=config.API_ID,
@@ -26,21 +26,21 @@ class RockBot(Client):
         self.id = get_me.id
         try:
             await self.send_message(
-                config.LOG_GROUP_ID, "Bot Started"
+                config.LOG_GROUP_ID, "Bᴏᴛ Sᴛᴀʀᴛᴇᴅ"
             )
         except:
             LOGGER(__name__).error(
-                "Bot has failed to access the log Group. Make sure that you have added your bot to your log channel and promoted as admin!"
+                "Bᴏᴛ ʜᴀs ғᴀɪʟᴇᴅ ᴛᴏ ᴀᴄᴄᴇss ᴛʜᴇ ʟᴏɢ Gʀᴏᴜᴘ. Mᴀᴋᴇ sᴜʀᴇ ᴛʜᴀᴛ ʏᴏᴜ ʜᴀᴠᴇ ᴀᴅᴅᴇᴅ ʏᴏᴜʀ ʙᴏᴛ ᴛᴏ ʏᴏᴜʀ ʟᴏɢ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴘʀᴏᴍᴏᴛᴇᴅ ᴀs ᴀᴅᴍɪɴ!"
             )
             sys.exit()
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
         if a.status != "administrator":
             LOGGER(__name__).error(
-                "Please promote Bot as Admin in Logger Group"
+                "Pʟᴇᴀsᴇ ᴘʀᴏᴍᴏᴛᴇ Bᴏᴛ ᴀs Aᴅᴍɪɴ ɪɴ Lᴏɢɢᴇʀ Gʀᴏᴜᴘ"
             )
             sys.exit()
         if get_me.last_name:
             self.name = get_me.first_name + " " + get_me.last_name
         else:
             self.name = get_me.first_name
-        LOGGER(__name__).info(f"MusicBot Started as {self.name}")
+        LOGGER(__name__).info(f"MᴜsɪᴄBᴏᴛ Sᴛᴀʀᴛᴇᴅ ᴀs {self.name}")
