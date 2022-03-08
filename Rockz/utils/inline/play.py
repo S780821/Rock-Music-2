@@ -26,7 +26,7 @@ def track_markup(_, videoid, user_id):
                 InlineKeyboardButton("乂ʙᴏᴛ sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
                 InlineKeyboardButton(
                     "乂ʙᴏᴛ ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
-                ),
+            ),
             ],
         [
             InlineKeyboardButton(
@@ -53,7 +53,7 @@ def stream_markup(_, videoid):
                 InlineKeyboardButton("乂ʙᴏᴛ sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
                 InlineKeyboardButton(
                     "乂ʙᴏᴛ ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
-                ),
+            ),
             ]
         [
             InlineKeyboardButton(
@@ -94,7 +94,7 @@ def playlist_markup(_, videoid, user_id, ptype):
                 InlineKeyboardButton("乂ʙᴏᴛ sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
                 InlineKeyboardButton(
                     "乂ʙᴏᴛ ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
-                ),
+            ),
             ]
         [
             InlineKeyboardButton(
@@ -139,7 +139,7 @@ def slider_markup(_, videoid, user_id, query, query_type):
                 InlineKeyboardButton("乂ʙᴏᴛ sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
                 InlineKeyboardButton(
                     "乂ʙᴏᴛ ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
-                ),
+            ),
             ]
         [
             InlineKeyboardButton(
