@@ -13,7 +13,7 @@ from Rockz.misc import db
 from Rockz.utils.database import (get_chatmode, get_cmode,
                                        is_active_chat)
 from Rockz.utils.decorators.language import language
-from Rockz.utils.pastebin import Yukkibin
+from Rockz.utils.pastebin import Rockbin
 
 ###Commands
 QUEUE_COMMAND = get_command("QUEUE_COMMAND")
@@ -50,7 +50,7 @@ async def ping_com(client, message: Message, _):
                         f'🏷Title: {x["title"]}\nDur: {x["dur"]}\n\n'
                     )
             if "Queued" in msg:
-                link = await Yukkibin(msg)
+                link = await Rockbin(msg)
                 lines = msg.count("\n")
                 if lines >= 22:
                     car = os.linesep.join(msg.split(os.linesep)[:22])
