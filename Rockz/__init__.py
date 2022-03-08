@@ -31,7 +31,7 @@ heroku()
 sudo()
 
 # Bot Client
-app = RockBot()
+app = YukkiBot()
 
 # Assistant Client
 userbot = Userbot()
