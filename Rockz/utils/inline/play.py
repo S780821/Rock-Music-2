@@ -133,7 +133,7 @@ def slider_markup(_, videoid, user_id, query, query_type):
             InlineKeyboardButton(
                 text=_["P_B_2"],
                 callback_data=f"MusicStream {videoid}|{user_id}|v",
-            ),
+            )
         ],
         [
                 InlineKeyboardButton("乂ʙᴏᴛ sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
