@@ -1,91 +1,86 @@
-# @xmartperson
+# @xᴍᴀʀᴛᴘᴇʀsᴏɴ
 
-HELP_1 = """✅**<u>Admin Commands:</u>**
-/pause - Pause the playing music.
-/resume - Resume the paused music.
-/mute - Mute the playing music.
-/unmute - Unmute the muted music.
-/skip - Skip the current playing music.
-/stop - Stop the playing music.
-/shuffle - Randomly shuffles the queued playlist.
+HELP_1 = """✅**<u>ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs:</u>**
+/pause - ᴘᴀᴜsᴇ ᴛʜᴇ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ.
+/resume - ʀᴇsᴜᴍᴇ ᴛʜᴇ ᴘᴀᴜsᴇᴅ ᴍᴜsɪᴄ.
+/mute - ᴍᴜᴛᴇ ᴛʜᴇ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ.
+/unmute - ᴜɴᴍᴜᴛᴇ ᴛʜᴇ ᴍᴜᴛᴇᴅ ᴍᴜsɪᴄ.
+/skip - sᴋɪᴘ ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ.
+/stop - sᴛᴏᴘ ᴛʜᴇ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ.
+/shuffle - ʀᴀɴᴅᴏᴍʟʏ sʜᴜғғʟᴇs ᴛʜᴇ ϙᴜᴇᴜᴇᴅ ᴘʟᴀʏʟɪsᴛ.
 
-✅<u>**Specific Skip:**</u>
-/skip [Number(example: 3)] 
-    - Skips music to a the specified queued number. Example: /skip 3 will skip music to third queued music and will ignore 1 and 2 music in queue.
+✅<u>**sᴘᴇᴄɪғɪᴄ sᴋɪᴘ:**</u>
+/skip [ɴᴜᴍʙᴇʀ(ᴇxᴀᴍᴘʟᴇ: 3)] 
+    - sᴋɪᴘs ᴍᴜsɪᴄ ᴛᴏ ᴀ ᴛʜᴇ sᴘᴇᴄɪғɪᴇᴅ ϙᴜᴇᴜᴇᴅ ɴᴜᴍʙᴇʀ. ᴇxᴀᴍᴘʟᴇ: /sᴋɪᴘ 3 ᴡɪʟʟ sᴋɪᴘ ᴍᴜsɪᴄ ᴛᴏ ᴛʜɪʀᴅ ϙᴜᴇᴜᴇᴅ ᴍᴜsɪᴄ ᴀɴᴅ ᴡɪʟʟ ɪɢɴᴏʀᴇ 1 ᴀɴᴅ 2 ᴍᴜsɪᴄ ɪɴ ϙᴜᴇᴜᴇ.
+✅<u>**ʟᴏᴏᴘ ᴘʟᴀʏ:**</u>
+/loop [ᴇɴᴀʙʟᴇ/ᴅɪsᴀʙʟᴇ] ᴏʀ [ɴᴜᴍʙᴇʀs ʙᴇᴛᴡᴇᴇɴ 1-10] 
+    - ᴡʜᴇɴ ᴀᴄᴛɪᴠᴀᴛᴇᴅ, ʙᴏᴛ ʟᴏᴏᴘs ᴛʜᴇ ᴄᴜʀʀᴇɴᴛ ᴘʟᴀʏɪɴɢ ᴍᴜsɪᴄ ᴛᴏ 1-10 ᴛɪᴍᴇs ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ. ᴅᴇғᴀᴜʟᴛ ᴛᴏ 10 ᴛɪᴍᴇs.
+✅<u>**ᴀᴜᴛʜ ᴜsᴇʀs:**</u>
+ᴀᴜᴛʜ ᴜsᴇʀs ᴄᴀɴ ᴜsᴇ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs ᴡɪᴛʜᴏᴜᴛ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ɪɴ ʏᴏᴜʀ ᴄʜᴀᴛ.
 
-✅<u>**Loop Play:**</u>
-/loop [enable/disable] or [Numbers between 1-10] 
-    - When activated, bot loops the current playing music to 1-10 times on voice chat. Default to 10 times.
-
-✅<u>**Auth Users:**</u>
-Auth Users can use admin commands without admin rights in your chat.
-
-/auth [Username] - Add a user to AUTH LIST of the group.
-/unauth [Username] - Remove a user from AUTH LIST of the group.
-/authusers - Check AUTH LIST of the group."""
+/auth [ᴜsᴇʀɴᴀᴍᴇ] - ᴀᴅᴅ ᴀ ᴜsᴇʀ ᴛᴏ ᴀᴜᴛʜ ʟɪsᴛ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ.
+/unauth [ᴜsᴇʀɴᴀᴍᴇ] - ʀᴇᴍᴏᴠᴇ ᴀ ᴜsᴇʀ ғʀᴏᴍ ᴀᴜᴛʜ ʟɪsᴛ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ.
+/authusers - ᴄʜᴇᴄᴋ ᴀᴜᴛʜ ʟɪsᴛ ᴏғ ᴛʜᴇ ɢʀᴏᴜᴘ."""
 
 
-HELP_2 = """✅<u>**Play Commands:**</u>
-/play or /vplay [Music Name or Youtube/Spotify/Apple/Resso/SoundCloud Link] 
-    - Bot will start playing your given query on voice chat.
+HELP_2 = """✅<u>**ᴘʟᴀʏ ᴄᴏᴍᴍᴀɴᴅs:**</u>
+/play ᴏʀ /vplay [ᴍᴜsɪᴄ ɴᴀᴍᴇ ᴏʀ ʏᴏᴜᴛᴜʙᴇ/spotify/apple/resso/soundcloud link] 
+    - ʙᴏᴛ ᴡɪʟʟ sᴛᴀʀᴛ ᴘʟᴀʏɪɴɢ ʏᴏᴜʀ ɢɪᴠᴇɴ ϙᴜᴇʀʏ ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ.
+/stream [ᴍ3ᴜ8 ᴏʀ ɪɴᴅᴇx ʟɪɴᴋs] 
+    - sᴛʀᴇᴀᴍ ʟɪᴠᴇ ʟɪɴᴋs ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛs.
+/channelplay [ᴄʜᴀɴɴᴇʟ ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ɪᴅ] ᴏʀ [ʟɪɴᴋᴇᴅ] 
+    - ᴄᴏɴɴᴇᴄᴛ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴀ ɢʀᴏᴜᴘ ᴀɴᴅ sᴛʀᴇᴀᴍ ᴍᴜsɪᴄ ᴏɴ ᴄʜᴀɴɴᴇʟ's ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ғʀᴏᴍ ʏᴏᴜʀ ɢʀᴏᴜᴘ. ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ʙᴇ ᴛʜᴇ **ᴏᴡɴᴇʀ** ᴏғ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ᴛᴏ ᴄᴏɴɴᴇᴄᴛ ɪᴛ. ᴀʟᴛᴇʀɴᴀᴛɪᴠᴇʟʏ ʏᴏᴜ ᴄᴀɴ ʟɪɴᴋ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ ᴛʜᴀᴛ ᴄʜᴀɴɴᴇʟ ᴀɴᴅ ᴛʜᴇɴ ᴛʀʏ ᴄᴏɴɴɴᴇᴄᴛɪɴɢ ᴡɪᴛʜ `/channelplay ʟɪɴᴋᴇᴅ`"
+ᴀғᴛᴇʀ ᴄᴏɴɴᴇᴄᴛɪɴɢ ᴄʜᴀɴɴᴇʟ, ᴄʜᴀɴɢᴇ ᴘʟᴀʏᴍᴏᴅᴇ ᴛᴏ ᴄʜᴀɴɴᴇʟ ғʀᴏᴍ ɢʀᴏᴜᴘ ᴠɪᴀ /playmode
 
-/stream [m3u8 or index links] 
-    - Stream live links on voice chats.
+✅<u>**sᴜᴘᴘᴏʀᴛᴇᴅ ᴘʟᴀᴛғᴏʀᴍ:**</u>
+ʙᴏᴛ ᴏɴʟʏ sᴜᴘᴘᴏʀᴛs ʏᴏᴜᴛᴜʙᴇ, ᴀᴘᴘʟᴇᴍᴜsɪᴄ, sᴘᴏᴛɪғʏ, ʀᴇssᴏ, sᴏᴜɴᴅᴄʟᴏᴜᴅ, ᴍ3ᴜ8 ᴀɴᴅ ɪɴᴅᴇx ʟɪɴᴋs
 
-/channelplay [Channel Username or ID] or [linked] 
-    - Connect channel to a group and stream music on channel's voice chat from your group. You need to be the **Owner** of the channel to connect it. Alternatively you can link your group to that channel and then try connnecting with `/channelplay linked`"
-
-After connecting channel, change playmode to channel from group via /playmode
-
-✅<u>**Supported Platform:**</u> 
-Bot only supports YouTube, AppleMusic, Spotify, Resso, Soundcloud, M3u8 and Index Links
-
-✅**<u>Bot's Server Playlists:</u>**
-/playlist  - Check Your Saved Playlist On Servers.
-/deleteplaylist - Delete any saved music in your playlist
-/play  - Start playing Your Saved Playlist from Servers.
+✅**<u>ʙᴏᴛ's sᴇʀᴠᴇʀ ᴘʟᴀʏʟɪsᴛs:</u>**
+/playlist  - ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴘʟᴀʏʟɪsᴛ ᴏɴ sᴇʀᴠᴇʀs.
+/deleteplaylist - ᴅᴇʟᴇᴛᴇ ᴀɴʏ sᴀᴠᴇᴅ ᴍᴜsɪᴄ ɪɴ ʏᴏᴜʀ ᴘʟᴀʏʟɪsᴛ
+/play  - sᴛᴀʀᴛ ᴘʟᴀʏɪɴɢ ʏᴏᴜʀ sᴀᴠᴇᴅ ᴘʟᴀʏʟɪsᴛ ғʀᴏᴍ sᴇʀᴠᴇʀs.
 
 
-✅<u>**Play Settings:**</u>
-/playmode - Get a complete play settings panel with buttons where you can set your group's play settings. 
+✅<u>**ᴘʟᴀʏ sᴇᴛᴛɪɴɢs:**</u>
+/playmode - ɢᴇᴛ ᴀ ᴄᴏᴍᴘʟᴇᴛᴇ ᴘʟᴀʏ sᴇᴛᴛɪɴɢs ᴘᴀɴᴇʟ ᴡɪᴛʜ ʙᴜᴛᴛᴏɴs ᴡʜᴇʀᴇ ʏᴏᴜ ᴄᴀɴ sᴇᴛ ʏᴏᴜʀ ɢʀᴏᴜᴘ's ᴘʟᴀʏ sᴇᴛᴛɪɴɢs. 
 
-🔗 **Options in playmode:** [Get more info on clicking the button there]
-1️⃣ **Search Mode** [ Direct or Inline] :- Changes your search mode while you give /play mode. 
-2️⃣ **Play Mode** [ Group or Channel] :- Changes your Play mode to channel or group and streams music there only.
-3️⃣ **Play Type** [ Everyone or Admins] :- If admins, only admins present in group can play music on voice chat."""
-
-
-HELP_3 = """✅<u>**Bot Commands:**</u>
-
-/stats - Get Top 10 Tracks Global Stats, Top 10 Users of bot, Top 10 Chats on bot, Top 10 Played in a chat etc etc.
-
-/sudolist - Check Sudo Users of Rockerz Music Bot
-
-/lyrics [Music Name] - Searches Lyrics for the particular Music on web.
-
-/song [Track Name] or [YT Link] - Download any track from youtube in mp3 or mp4 formats.
-
-/queue- Check Queue List of Music."""
+🔗 **ᴏᴘᴛɪᴏɴs ɪɴ ᴘʟᴀʏᴍᴏᴅᴇ:** [ɢᴇᴛ ᴍᴏʀᴇ ɪɴғᴏ ᴏɴ ᴄʟɪᴄᴋɪɴɢ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ᴛʜᴇʀᴇ]
+1️⃣ **sᴇᴀʀᴄʜ ᴍᴏᴅᴇ** [ ᴅɪʀᴇᴄᴛ ᴏʀ ɪɴʟɪɴᴇ] :- ᴄʜᴀɴɢᴇs ʏᴏᴜʀ sᴇᴀʀᴄʜ ᴍᴏᴅᴇ ᴡʜɪʟᴇ ʏᴏᴜ ɢɪᴠᴇ /play ᴍᴏᴅᴇ. 
+2️⃣ **ᴘʟᴀʏ ᴍᴏᴅᴇ** [ ɢʀᴏᴜᴘ ᴏʀ ᴄʜᴀɴɴᴇʟ] :- ᴄʜᴀɴɢᴇs ʏᴏᴜʀ ᴘʟᴀʏ ᴍᴏᴅᴇ ᴛᴏ ᴄʜᴀɴɴᴇʟ ᴏʀ ɢʀᴏᴜᴘ ᴀɴᴅ sᴛʀᴇᴀᴍs ᴍᴜsɪᴄ ᴛʜᴇʀᴇ ᴏɴʟʏ.
+3️⃣ **ᴘʟᴀʏ ᴛʏᴘᴇ** [ ᴇᴠᴇʀʏᴏɴᴇ ᴏʀ ᴀᴅᴍɪɴs] :- ɪғ ᴀᴅᴍɪɴs, ᴏɴʟʏ ᴀᴅᴍɪɴs ᴘʀᴇsᴇɴᴛ ɪɴ ɢʀᴏᴜᴘ ᴄᴀɴ ᴘʟᴀʏ ᴍᴜsɪᴄ ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ."""
 
 
-HELP_4 = """✅<u>**Extra  Commands:**</u>
-/start - Start the Rockerz Music Bot.
-/help  - Get Commands Helper Menu with detailed explanations of commands.
-/ping- Ping the Bot and check Ram, Cpu etc stats of Rockerz.
+HELP_3 = """✅<u>**ʙᴏᴛ ᴄᴏᴍᴍᴀɴᴅs:**</u>
 
-✅<u>**Group Settings:**</u>
-/settings - Get a complete group's settings with inline buttons
+/stats - ɢᴇᴛ ᴛᴏᴘ 10 ᴛʀᴀᴄᴋs ɢʟᴏʙᴀʟ sᴛᴀᴛs, ᴛᴏᴘ 10 ᴜsᴇʀs ᴏғ ʙᴏᴛ, ᴛᴏᴘ 10 ᴄʜᴀᴛs ᴏɴ ʙᴏᴛ, ᴛᴏᴘ 10 ᴘʟᴀʏᴇᴅ ɪɴ ᴀ ᴄʜᴀᴛ ᴇᴛᴄ ᴇᴛᴄ.
 
-🔗 **Options in Settings:**
+/sudolist - ᴄʜᴇᴄᴋ sᴜᴅᴏ ᴜsᴇʀs ᴏғ ʀᴏᴄᴋᴇʀᴢ ᴍᴜsɪᴄ ʙᴏᴛ
 
-1️⃣ You can set **Audio Quality** you want to stream on voice chat.
+/lyrics [ᴍᴜsɪᴄ ɴᴀᴍᴇ] - sᴇᴀʀᴄʜᴇs ʟʏʀɪᴄs ғᴏʀ ᴛʜᴇ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴍᴜsɪᴄ ᴏɴ ᴡᴇʙ.
 
-2️⃣ You can set **Video Quality** you want to stream on voice chat.
+/song [ᴛʀᴀᴄᴋ ɴᴀᴍᴇ] ᴏʀ [ʏᴛ ʟɪɴᴋ] - ᴅᴏᴡɴʟᴏᴀᴅ ᴀɴʏ ᴛʀᴀᴄᴋ ғʀᴏᴍ ʏᴏᴜᴛᴜʙᴇ ɪɴ ᴍᴘ3 ᴏʀ ᴍᴘ4 ғᴏʀᴍᴀᴛs.
 
-3️⃣ **Auth Users**:- You can change admin commands mode from here to everyone or admins only. If everyone, anyone present in you group will be able to use admin commands(like /skip, /stop etc)
+/queue- ᴄʜᴇᴄᴋ ϙᴜᴇᴜᴇ ʟɪsᴛ ᴏғ ᴍᴜsɪᴄ."""
 
-4️⃣ **Play Mode Settings** :  Get help regarding in play commands section.
 
-5️⃣ **Clean Mode:** When enabled deletes the bot's messages after 5 mins from your group to make sure your chat remains clean and good.
+HELP_4 = """✅<u>**ᴇxᴛʀᴀ  ᴄᴏᴍᴍᴀɴᴅs:**</u>
+/start - sᴛᴀʀᴛ ᴛʜᴇ ʀᴏᴄᴋᴇʀᴢ ᴍᴜsɪᴄ ʙᴏᴛ.
+/help  - ɢᴇᴛ ᴄᴏᴍᴍᴀɴᴅs ʜᴇʟᴘᴇʀ ᴍᴇɴᴜ ᴡɪᴛʜ ᴅᴇᴛᴀɪʟᴇᴅ ᴇxᴘʟᴀɴᴀᴛɪᴏɴs ᴏғ ᴄᴏᴍᴍᴀɴᴅs.
+/ping - ᴘɪɴɢ ᴛʜᴇ ʙᴏᴛ ᴀɴᴅ ᴄʜᴇᴄᴋ ʀᴀᴍ, ᴄᴘᴜ ᴇᴛᴄ sᴛᴀᴛs ᴏғ ʀᴏᴄᴋᴇʀᴢ.
 
-6️⃣ **Command Clean** : When activated, Bot will delete its executed commands (/play, /pause, /shuffle, /stop etc) immediately."""
+✅<u>**ɢʀᴏᴜᴘ sᴇᴛᴛɪɴɢs:**</u>
+/settings - ɢᴇᴛ ᴀ ᴄᴏᴍᴘʟᴇᴛᴇ ɢʀᴏᴜᴘ's sᴇᴛᴛɪɴɢs ᴡɪᴛʜ ɪɴʟɪɴᴇ ʙᴜᴛᴛᴏɴs
+
+🔗 **ᴏᴘᴛɪᴏɴs ɪɴ sᴇᴛᴛɪɴɢs:**
+
+1️⃣ ʏᴏᴜ ᴄᴀɴ sᴇᴛ **ᴀᴜᴅɪᴏ ϙᴜᴀʟɪᴛʏ** ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴛʀᴇᴀᴍ ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ.
+
+2️⃣ ʏᴏᴜ ᴄᴀɴ sᴇᴛ **ᴠɪᴅᴇᴏ ϙᴜᴀʟɪᴛʏ** ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴛʀᴇᴀᴍ ᴏɴ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ.
+
+3️⃣ **ᴀᴜᴛʜ ᴜsᴇʀs**:- ʏᴏᴜ ᴄᴀɴ ᴄʜᴀɴɢᴇ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs ᴍᴏᴅᴇ ғʀᴏᴍ ʜᴇʀᴇ ᴛᴏ ᴇᴠᴇʀʏᴏɴᴇ ᴏʀ ᴀᴅᴍɪɴs ᴏɴʟʏ. ɪғ ᴇᴠᴇʀʏᴏɴᴇ, ᴀɴʏᴏɴᴇ ᴘʀᴇsᴇɴᴛ ɪɴ ʏᴏᴜ ɢʀᴏᴜᴘ ᴡɪʟʟ ʙᴇ ᴀʙʟᴇ ᴛᴏ ᴜsᴇ ᴀᴅᴍɪɴ ᴄᴏᴍᴍᴀɴᴅs(ʟɪᴋᴇ /skip, /stop ᴇᴛᴄ)
+
+4️⃣ **ᴘʟᴀʏ ᴍᴏᴅᴇ sᴇᴛᴛɪɴɢs** :  ɢᴇᴛ ʜᴇʟᴘ ʀᴇɢᴀʀᴅɪɴɢ ɪɴ ᴘʟᴀʏ ᴄᴏᴍᴍᴀɴᴅs sᴇᴄᴛɪᴏɴ.
+
+5️⃣ **ᴄʟᴇᴀɴ ᴍᴏᴅᴇ:** ᴡʜᴇɴ ᴇɴᴀʙʟᴇᴅ ᴅᴇʟᴇᴛᴇs ᴛʜᴇ ʙᴏᴛ's ᴍᴇssᴀɢᴇs ᴀғᴛᴇʀ 5 ᴍɪɴs ғʀᴏᴍ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴛᴏ ᴍᴀᴋᴇ sᴜʀᴇ ʏᴏᴜʀ ᴄʜᴀᴛ ʀᴇᴍᴀɪɴs ᴄʟᴇᴀɴ ᴀɴᴅ ɢᴏᴏᴅ.
+
+6️⃣ **ᴄᴏᴍᴍᴀɴᴅ ᴄʟᴇᴀɴ** : ᴡʜᴇɴ ᴀᴄᴛɪᴠᴀᴛᴇᴅ, ʙᴏᴛ ᴡɪʟʟ ᴅᴇʟᴇᴛᴇ ɪᴛs ᴇxᴇᴄᴜᴛᴇᴅ ᴄᴏᴍᴍᴀɴᴅs (/play, /pause, /shuffle, /stop ᴇᴛᴄ) ɪᴍᴍᴇᴅɪᴀᴛᴇʟʏ."""
