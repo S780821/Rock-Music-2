@@ -17,7 +17,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from Rockz import LOGGER, app, userbot
-from Rockz.core.call import Yukki
+from Rockz.core.call import Rock
 from Rockz.plugins import ALL_MODULES
 from Rockz.utils.database import get_gbanned
 
