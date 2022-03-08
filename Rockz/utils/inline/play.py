@@ -23,6 +23,12 @@ def track_markup(_, videoid, user_id):
             ),
         ],
         [
+                InlineKeyboardButton("乂ʙᴏᴛ sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
+                InlineKeyboardButton(
+                    "乂ʙᴏᴛ ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
+                ),
+            ],
+        [
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
                 callback_data=f"forceclose {videoid}|{user_id}",
@@ -43,6 +49,12 @@ def stream_markup(_, videoid):
                 text=_["PL_B_3"], switch_inline_query_current_chat=""
             ),
         ],
+        [
+                InlineKeyboardButton("乂ʙᴏᴛ sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
+                InlineKeyboardButton(
+                    "乂ʙᴏᴛ ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
+                ),
+            ]
         [
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
@@ -78,6 +90,12 @@ def playlist_markup(_, videoid, user_id, ptype):
                 callback_data=f"YukkiPlaylists {videoid}|{user_id}|{ptype}|v",
             ),
         ],
+        [
+                InlineKeyboardButton("乂ʙᴏᴛ sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
+                InlineKeyboardButton(
+                    "乂ʙᴏᴛ ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
+                ),
+            ]
         [
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
@@ -117,6 +135,12 @@ def slider_markup(_, videoid, user_id, query, query_type):
                 callback_data=f"MusicStream {videoid}|{user_id}|v",
             ),
         ],
+        [
+                InlineKeyboardButton("乂ʙᴏᴛ sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
+                InlineKeyboardButton(
+                    "乂ʙᴏᴛ ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
+                ),
+            ]
         [
             InlineKeyboardButton(
                 text="❮",
