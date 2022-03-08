@@ -6,7 +6,7 @@ from pyrogram.types import Message
 from config import BANNED_USERS
 from strings import get_command
 from Rockz import app
-from Rockz.core.call import Yukki
+from Rockz.core.call import Rock
 from Rockz.utils.database import is_music_playing, music_on
 from Rockz.utils.decorators import AdminRightsCheck
 
@@ -24,7 +24,7 @@ async def resume_com(cli, message: Message, _, chat_id):
     if await is_music_playing(chat_id):
         return await message.reply_text(_["admin_3"])
     await music_on(chat_id)
-    await Yukki.resume_stream(chat_id)
+    await Rock.resume_stream(chat_id)
     await message.reply_text(
         _["admin_4"].format(message.from_user.mention)
     )
