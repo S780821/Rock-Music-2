@@ -49,7 +49,7 @@ async def init():
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await RockBot.start()
+    await Rock.start()
     try:
         await RockBot.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
