@@ -25,7 +25,7 @@ node(){
 
 
 repo(){
-	git clone https://github.com/S780821/Rock-Muzic-V2 &&  cd Rock-Muzic-V2 
+	git clone https://github.com/S780821/Rock-Music-2 &&  cd Rock-Music-2 
 }
 
 
