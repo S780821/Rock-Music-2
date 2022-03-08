@@ -21,13 +21,13 @@ def track_markup(_, videoid, user_id):
                 text=_["P_B_2"],
                 callback_data=f"MusicStream {videoid}|{user_id}|v",
             ),
-        ]
+        ],
         [
-                InlineKeyboardButton("乂ʙᴏᴛ sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
+                InlineKeyboardButton("乂sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
                 InlineKeyboardButton(
-                    "乂ʙᴏᴛ ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
-            ),
-            ],
+                    "乂ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
+             ),
+        ],
         [
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
@@ -48,13 +48,13 @@ def stream_markup(_, videoid):
             InlineKeyboardButton(
                 text=_["PL_B_3"], switch_inline_query_current_chat=""
             ),
-        ]
+        ],
         [
-                InlineKeyboardButton("乂ʙᴏᴛ sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
+                InlineKeyboardButton("乂sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
                 InlineKeyboardButton(
-                    "乂ʙᴏᴛ ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
+                    "乂ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
             ),
-            ]
+        ],
         [
             InlineKeyboardButton(
                 text=_["CLOSEMENU_BUTTON"], callback_data="close"
@@ -89,13 +89,13 @@ def playlist_markup(_, videoid, user_id, ptype):
                 text=_["P_B_2"],
                 callback_data=f"RockPlaylists {videoid}|{user_id}|{ptype}|v",
             ),
-        ]
+        ],
         [
-                InlineKeyboardButton("乂ʙᴏᴛ sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
+                InlineKeyboardButton("乂sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
                 InlineKeyboardButton(
-                    "乂ʙᴏᴛ ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
-            ),
-            ]
+                    "乂ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
+             ),
+        ],
         [
             InlineKeyboardButton(
                 text=_["CLOSE_BUTTON"],
@@ -133,14 +133,14 @@ def slider_markup(_, videoid, user_id, query, query_type):
             InlineKeyboardButton(
                 text=_["P_B_2"],
                 callback_data=f"MusicStream {videoid}|{user_id}|v",
-            )
+            ),
         ],
         [
-                InlineKeyboardButton("乂ʙᴏᴛ sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
+                InlineKeyboardButton("乂sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
                 InlineKeyboardButton(
-                    "乂ʙᴏᴛ ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
+                    "乂ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
             ),
-            ]
+        ],
         [
             InlineKeyboardButton(
                 text="❮",
