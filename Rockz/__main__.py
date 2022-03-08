@@ -61,7 +61,7 @@ async def init():
         sys.exit()
     except:
         pass
-    await Rockz.decorators()
+    await Rock.decorators()
     LOGGER("Rockz").info("🥌 Rock Music Bot Started Successfully")
     await idle()
 
