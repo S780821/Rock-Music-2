@@ -70,12 +70,12 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/S780821/Rock-Muzic-2",
+        "value": "https://github.com/S780821/Rock-Music-2",
         "required": true
       },
       "UPSTREAM_BRANCH": {
         "description": "Repo's Branch Name",
-        "value": "xmarty",
+        "value": "Xmarty",
         "required": true
       }
     },
