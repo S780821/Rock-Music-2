@@ -23,9 +23,9 @@ def track_markup(_, videoid, user_id):
             ),
         ],
         [
-                InlineKeyboardButton("乂sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
+                InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/all_competitive_examm"),
                 InlineKeyboardButton(
-                    "乂ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
+                    "ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Rockerz_Updates"
              ),
         ],
         [
@@ -50,9 +50,9 @@ def stream_markup(_, videoid):
             ),
         ],
         [
-                InlineKeyboardButton("乂sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
+                InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/all_competitive_examm"),
                 InlineKeyboardButton(
-                    "乂ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
+                    "ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Rockerz_Updates"
             ),
         ],
         [
@@ -91,9 +91,9 @@ def playlist_markup(_, videoid, user_id, ptype):
             ),
         ],
         [
-                InlineKeyboardButton("乂sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
+                InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/all_competitive_examm"),
                 InlineKeyboardButton(
-                    "乂ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
+                    "ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Rockerz_Updates"
              ),
         ],
         [
@@ -136,9 +136,9 @@ def slider_markup(_, videoid, user_id, query, query_type):
             ),
         ],
         [
-                InlineKeyboardButton("乂sᴜᴘᴘᴏʀᴛ乂", url=f"https://t.me/Rockerz_Updates"),
+                InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/all_competitive_examm"),
                 InlineKeyboardButton(
-                    "乂ᴄʜᴀɴɴᴇʟ乂", url=f"https://t.me/Rockerz_Updates"
+                    "ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/Rockerz_Updates"
             ),
         ],
         [
