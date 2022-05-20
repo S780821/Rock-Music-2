@@ -1,11 +1,4 @@
-#
-# Copyright (C) 2021-2022 by S780821@Github, < https://github.com/S780821 >.
-#
-# This file is part of < https://github.com/S780821/Rock-Music-V2 > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/S780821/Rock-Music-V2/blob/xmarty/LICENSE >
-#
-# All rights reserved.
+# @xmartperson
 
 import asyncio
 import importlib
@@ -17,9 +10,9 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from Rockz import LOGGER, app, userbot
-from Rockz.core.call import Rock
+from Rockz.core.call import Yukki
 from Rockz.plugins import ALL_MODULES
-from Rockz.utils.database import get_gbanned
+from Rockz.utils.database import get_banned_users, get_gbanned
 
 loop = asyncio.get_event_loop()
 
@@ -32,12 +25,22 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER("RockBot").error(
+        LOGGER("Rockz").error(
             "No Assistant Clients Vars Defined!.. Exiting Process."
         )
         return
+    if (
+        not config.SPOTIFY_CLIENT_ID
+        and not config.SPOTIFY_CLIENT_SECRET
+    ):
+        LOGGER("Rockz").warning(
+            "No Spotify Vars defined. Your bot won't be able to play spotify queries."
+        )
     try:
         users = await get_gbanned()
+        for user_id in users:
+            BANNED_USERS.add(user_id)
+        users = await get_banned_users()
         for user_id in users:
             BANNED_USERS.add(user_id)
     except:
@@ -49,9 +52,9 @@ async def init():
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await Rock.start()
+    await Yukki.start()
     try:
-        await RockBot.stream_call(
+        await Yukki.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
@@ -61,11 +64,11 @@ async def init():
         sys.exit()
     except:
         pass
-    await Rock.decorators()
-    LOGGER("Rockz").info("🥌 Rock Music Bot Started Successfully")
+    await Yukki.decorators()
+    LOGGER("Rockz").info("Yukki Music Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("Rockz").info("Stopping 🥌 Rock Music Bot! GoodBye")
+    LOGGER("Rockz").info("Stopping Yukki Music Bot! GoodBye")
