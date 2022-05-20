@@ -8,7 +8,6 @@ from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from config import BANNED_USERS
 from Rockz import LOGGER, app, userbot
 from Rockz.core.call import Rock
 from Rockz.plugins import ALL_MODULES
@@ -36,13 +35,7 @@ async def init():
         LOGGER("Rockz").warning(
             "No Spotify Vars defined. Your bot won't be able to play spotify queries."
         )
-    try:
-        users = await get_gbanned()
-        for user_id in users:
-            BANNED_USERS.add(user_id)
-        users = await get_banned_users()
-        for user_id in users:
-            BANNED_USERS.add(user_id)
+    
     except:
         pass
     await app.start()
