@@ -11,7 +11,7 @@ import config
 from Rockz import LOGGER, app, userbot
 from Rockz.core.call import Rock
 from Rockz.plugins import ALL_MODULES
-from Rockz.utils.database import get_banned_users, get_gbanned
+from Rockz.utils.database import get_gbanned
 
 loop = asyncio.get_event_loop()
 
@@ -24,18 +24,14 @@ async def init():
         and not config.STRING4
         and not config.STRING5
     ):
-        LOGGER("Rockz").error(
+        LOGGER("RockBot").error(
             "No Assistant Clients Vars Defined!.. Exiting Process."
         )
         return
-    if (
-        not config.SPOTIFY_CLIENT_ID
-        and not config.SPOTIFY_CLIENT_SECRET
-    ):
-        LOGGER("Rockz").warning(
-            "No Spotify Vars defined. Your bot won't be able to play spotify queries."
-        )
-    
+    try:
+        users = await get_gbanned()
+        for user_id in users:
+            BANNED_USERS.add(user_id)
     except:
         pass
     await app.start()
