@@ -10,7 +10,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 import config
 from config import BANNED_USERS
 from Rockz import LOGGER, app, userbot
-from Rockz.core.call import Yukki
+from Rockz.core.call import Rockz
 from Rockz.plugins import ALL_MODULES
 from Rockz.utils.database import get_banned_users, get_gbanned
 
@@ -52,9 +52,9 @@ async def init():
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await Yukki.start()
+    await Rockz.start()
     try:
-        await Yukki.stream_call(
+        await Rockz.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
@@ -64,11 +64,11 @@ async def init():
         sys.exit()
     except:
         pass
-    await Yukki.decorators()
-    LOGGER("Rockz").info("Yukki Music Bot Started Successfully")
+    await Rockz.decorators()
+    LOGGER("Rockz").info("Rockz Music Bot Started Successfully")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("Rockz").info("Stopping Yukki Music Bot! GoodBye")
+    LOGGER("Rockz").info("Stopping Rockz Music Bot! GoodBye")
