@@ -41,9 +41,9 @@ async def init():
         "Successfully Imported Modules "
     )
     await userbot.start()
-    await Rockz.start()
+    await Rock.start()
     try:
-        await Rockz.stream_call(
+        await RockzBot.stream_call(
             "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
         )
     except NoActiveGroupCall:
